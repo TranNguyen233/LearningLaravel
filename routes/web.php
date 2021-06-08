@@ -20,7 +20,13 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', [App\Http\Controllers\PostController::class, 'index']);
 Route::get('/post/create', [App\Http\Controllers\PostController::class, 'create']);
 Route::post('post', [App\Http\Controllers\PostController::class, 'store']);
-Route::get('post/{post}/edit', [App\Http\Controllers\PostController::class, 'edit']);
-Route::get('post/{post}/show', [App\Http\Controllers\PostController::class, 'show']);
-Route::put('post/{post}/update', [App\Http\Controllers\PostController::class, 'update']);
+Route::get('/post/edit', [App\Http\Controllers\PostController::class, 'edit']);
+Route::get('/post/show', [App\Http\Controllers\PostController::class, 'show']);
+// index
+Route::get('/home/index', [App\Http\Controllers\PostController::class, 'index']);
+
+Route::put('/post/{post}/update', [App\Http\Controllers\PostController::class, 'update']);
 Route::delete('post/{post}/delete', [App\Http\Controllers\PostController::class, 'destroy']);
+// e đang ở master. thường master là gốc. ít khi commit code lên 
+// nhưng e làm 1 mình thì k s
+// nó kiu tạo nhánh khác=]
