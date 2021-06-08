@@ -27,6 +27,3 @@ Route::get('/home/index', [App\Http\Controllers\PostController::class, 'index'])
 
 Route::put('/post/{post}/update', [App\Http\Controllers\PostController::class, 'update']);
 Route::delete('post/{post}/delete', [App\Http\Controllers\PostController::class, 'destroy']);
-// e đang ở master. thường master là gốc. ít khi commit code lên 
-// nhưng e làm 1 mình thì k s
-// nó kiu tạo nhánh khác=]
